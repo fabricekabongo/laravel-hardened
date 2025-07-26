@@ -1,0 +1,35 @@
+{
+    "name": "fabricekabongo/laravel-hardened",
+    "description": "Audit-ready, secure defaults for Laravel applications.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/database": "^11.0",
+        "illuminate/http": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FabriceKabongo\\LaravelHardened\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FabriceKabongo\\LaravelHardened\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+    ,"extra": {
+        "laravel": {
+            "providers": [
+                "FabriceKabongo\\LaravelHardened\\HardeningServiceProvider"
+            ]
+        }
+    }
+}
